@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{830859CD-5502-4E38-A018-69945DA4739A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inventory_control</RootNamespace>
+    <AssemblyName>inventory_control</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/inventory_control/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Tutorials.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassModules\clsCreateCustomer.cs" />
+    <Compile Include="ClassModules\clsCreateItemMaster.cs" />
+    <Compile Include="ClassModules\clsCreateSuppliers.cs" />
+    <Compile Include="ClassModules\clsCustomers.cs" />
+    <Compile Include="ClassModules\clsItemIssue.cs" />
+    <Compile Include="ClassModules\clsItemPurchase.cs" />
+    <Compile Include="ClassModules\clsValidation.cs" />
+    <Compile Include="ClassModules\clsUserLogin.cs" />
+    <Compile Include="Commons\Commons.cs" />
+    <Compile Include="Data\dsAcctPeriod.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAcctPeriod.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsCustomers1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsFinancialYear.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFinancialYear.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsItemMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsItemMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IssueMaster1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssueMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PurchaseMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ViewStockData.cs">
+      <DependentUpon>ViewStockData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\ViewStockData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewStockData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedError\ErrorProviderExtended.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormModules\CreateSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\CreateSupplierForm.Designer.cs">
+      <DependentUpon>CreateSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\CurrentAcctPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\CurrentAcctPeriod.Designer.cs">
+      <DependentUpon>CurrentAcctPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\CustomerMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\CustomerMaster.Designer.cs">
+      <DependentUpon>CustomerMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\BrandMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\BrandMaster.Designer.cs">
+      <DependentUpon>BrandMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassModules\clsFinancialYear.cs" />
+    <Compile Include="ClassModules\clsGlobalValue.cs" />
+    <Compile Include="ClassModules\clsTools.cs" />
+    <Compile Include="ClassModules\clsUserCreation.cs" />
+    <Compile Include="ClassModules\DataAccessLayer.cs" />
+    <Compile Include="ClassModules\clsItemGroupMaster.cs" />
+    <Compile Include="dsPopulateData.cs">
+      <DependentUpon>dsPopulateData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsPopulateData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPopulateData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsUserList.cs">
+      <DependentUpon>dsUserList.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsUserList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUserList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\AcctPeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\AcctPeriodForm.Designer.cs">
+      <DependentUpon>AcctPeriodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassModules\clsUnitMaster.cs" />
+    <Compile Include="ClassModules\clsBrandMaster.cs" />
+    <Compile Include="dsCustomerList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomerList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsBrandMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBrandMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsUnitMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUnitMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsItemGroup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsItemGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\dsSuppliers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSuppliers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\FastItemCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\FastItemCreate.Designer.cs">
+      <DependentUpon>FastItemCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\ItemGroupMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\ItemGroupMaster.Designer.cs">
+      <DependentUpon>ItemGroupMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\ItemMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\ItemMaster.Designer.cs">
+      <DependentUpon>ItemMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\ItemIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\ItemIssue.Designer.cs">
+      <DependentUpon>ItemIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\ItemPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\ItemPurchase.Designer.cs">
+      <DependentUpon>ItemPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\SelectFinYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\SelectFinYear.Designer.cs">
+      <DependentUpon>SelectFinYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\UserCreationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\UserCreationForm.Designer.cs">
+      <DependentUpon>UserCreationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\UserListForm.Designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModules\ViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\ViewStock.Designer.cs">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormModules\AcctPeriodForm.resx">
+      <DependentUpon>AcctPeriodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\BrandMaster.resx">
+      <DependentUpon>BrandMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\CreateSupplierForm.resx">
+      <DependentUpon>CreateSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\CurrentAcctPeriod.resx">
+      <DependentUpon>CurrentAcctPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\CustomerMaster.resx">
+      <DependentUpon>CustomerMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\FastItemCreate.resx">
+      <DependentUpon>FastItemCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\ItemGroupMaster.resx">
+      <DependentUpon>ItemGroupMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\ItemMaster.resx">
+      <DependentUpon>ItemMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\ItemIssue.resx">
+      <DependentUpon>ItemIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\ItemPurchase.resx">
+      <DependentUpon>ItemPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\SelectFinYear.resx">
+      <DependentUpon>SelectFinYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\UnitMaster.resx">
+      <DependentUpon>UnitMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\UserCreationForm.resx">
+      <DependentUpon>UserCreationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModules\ViewStock.resx">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Data\dsCustomers.xsc">
+      <DependentUpon>dsCustomers.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsCustomers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomers1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\dsCustomers.xss">
+      <DependentUpon>dsCustomers.xsd</DependentUpon>
+    </None>
+    <None Include="Data\IssueMaster.xsc">
+      <DependentUpon>IssueMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\IssueMaster.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IssueMaster1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\IssueMaster.xss">
+      <DependentUpon>IssueMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FormModules\UnitMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModules\UnitMaster.Designer.cs">
+      <DependentUpon>UnitMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassModules\clsCustomerGridClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TopCustomers_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Views_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Categories_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CustomerFilmRentsList_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CustomersByDate_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Home_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\View_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TopFilmList_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CustomersKPI_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPopulateData.xsc">
+      <DependentUpon>dsPopulateData.xsd</DependentUpon>
+    </None>
+    <None Include="dsPopulateData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPopulateData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPopulateData.xss">
+      <DependentUpon>dsPopulateData.xsd</DependentUpon>
+    </None>
+    <None Include="dsUserList.xsc">
+      <DependentUpon>dsUserList.xsd</DependentUpon>
+    </None>
+    <None Include="dsUserList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsUserList.xss">
+      <DependentUpon>dsUserList.xsd</DependentUpon>
+    </None>
+    <None Include="dsCustomerList.xsc">
+      <DependentUpon>dsCustomerList.xsd</DependentUpon>
+    </None>
+    <None Include="dsCustomerList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomerList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsCustomerList.xss">
+      <DependentUpon>dsCustomerList.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsBrandMaster.xsc">
+      <DependentUpon>dsBrandMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsBrandMaster.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBrandMaster.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsBrandMaster.xss">
+      <DependentUpon>dsBrandMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsUnitMaster.xsc">
+      <DependentUpon>dsUnitMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsUnitMaster.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUnitMaster.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsUnitMaster.xss">
+      <DependentUpon>dsUnitMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsItemGroup.xsc">
+      <DependentUpon>dsItemGroup.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsItemGroup.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsItemGroup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsItemGroup.xss">
+      <DependentUpon>dsItemGroup.xsd</DependentUpon>
+    </None>
+    <None Include="Images\Group_Administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\dsAcctPeriod.xsc">
+      <DependentUpon>dsAcctPeriod.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsAcctPeriod.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAcctPeriod.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsAcctPeriod.xss">
+      <DependentUpon>dsAcctPeriod.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsItemMaster.xsc">
+      <DependentUpon>dsItemMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsItemMaster.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsItemMaster.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsItemMaster.xss">
+      <DependentUpon>dsItemMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsSuppliers.xsc">
+      <DependentUpon>dsSuppliers.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsSuppliers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSuppliers.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsSuppliers.xss">
+      <DependentUpon>dsSuppliers.xsd</DependentUpon>
+    </None>
+    <None Include="Images\RevenueSplit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\inflow-inventory-software-free-edition.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimePanic_for_Windows_and_Pocket_PC-screenshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WhitePaper.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WhitePaper_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ActiveRents_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Preview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\PurchaseMaster.xsc">
+      <DependentUpon>PurchaseMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\PurchaseMaster.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PurchaseMaster.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\PurchaseMaster.xss">
+      <DependentUpon>PurchaseMaster.xsd</DependentUpon>
+    </None>
+    <None Include="Data\ViewStockData.xsc">
+      <DependentUpon>ViewStockData.xsd</DependentUpon>
+    </None>
+    <None Include="Data\ViewStockData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewStockData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\ViewStockData.xss">
+      <DependentUpon>ViewStockData.xsd</DependentUpon>
+    </None>
+    <None Include="Images\Preview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ActiveRents_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\New_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Lock-Unlock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Period_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\dsFinancialYear.xsc">
+      <DependentUpon>dsFinancialYear.xsd</DependentUpon>
+    </None>
+    <None Include="Data\dsFinancialYear.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFinancialYear.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\dsFinancialYear.xss">
+      <DependentUpon>dsFinancialYear.xsd</DependentUpon>
+    </None>
+    <None Include="Images\Period_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\item_purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\challan_prep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\item_sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CustomerInfoCards_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsUserList" targetNamespace="http://tempuri.org/dsUserList.xsd" xmlns:mstns="http://tempuri.org/dsUserList.xsd" xmlns="http://tempuri.org/dsUserList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsUserList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsUserList" msprop:Generator_DataSetName="dsUserList" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_MainUsers" msprop:Generator_UserTableName="tbl_MainUsers" msprop:Generator_RowDeletedName="tbl_MainUsersRowDeleted" msprop:Generator_RowChangedName="tbl_MainUsersRowChanged" msprop:Generator_RowClassName="tbl_MainUsersRow" msprop:Generator_RowChangingName="tbl_MainUsersRowChanging" msprop:Generator_RowEvArgName="tbl_MainUsersRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_MainUsersRowChangeEventHandler" msprop:Generator_TableClassName="tbl_MainUsersDataTable" msprop:Generator_TableVarName="tabletbl_MainUsers" msprop:Generator_RowDeletingName="tbl_MainUsersRowDeleting" msprop:Generator_TablePropName="tbl_MainUsers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserID" msprop:Generator_UserColumnName="UserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" type="xs:string" />
+              <xs:element name="FullName" msdata:ReadOnly="true" msdata:Expression="[FirstName] + ' ' + [LastName] " msprop:Generator_UserColumnName="FullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInTable="PasswordColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Contact_x0020_No" msprop:Generator_UserColumnName="Contact No" msprop:Generator_ColumnPropNameInRow="Contact_No" msprop:Generator_ColumnVarNameInTable="columnContact_No" msprop:Generator_ColumnPropNameInTable="Contact_NoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserGroup" msprop:Generator_UserColumnName="UserGroup" msprop:Generator_ColumnPropNameInRow="UserGroup" msprop:Generator_ColumnVarNameInTable="columnUserGroup" msprop:Generator_ColumnPropNameInTable="UserGroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserGroupID" msprop:Generator_UserColumnName="UserGroupID" msprop:Generator_ColumnPropNameInRow="UserGroupID" msprop:Generator_ColumnVarNameInTable="columnUserGroupID" msprop:Generator_ColumnPropNameInTable="UserGroupIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserGroupName" msprop:Generator_UserColumnName="UserGroupName" msprop:Generator_ColumnPropNameInRow="UserGroupName" msprop:Generator_ColumnVarNameInTable="columnUserGroupName" msprop:Generator_ColumnPropNameInTable="UserGroupNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_UserGroup" msprop:Generator_UserTableName="tbl_UserGroup" msprop:Generator_RowDeletedName="tbl_UserGroupRowDeleted" msprop:Generator_RowChangedName="tbl_UserGroupRowChanged" msprop:Generator_RowClassName="tbl_UserGroupRow" msprop:Generator_RowChangingName="tbl_UserGroupRowChanging" msprop:Generator_RowEvArgName="tbl_UserGroupRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_UserGroupRowChangeEventHandler" msprop:Generator_TableClassName="tbl_UserGroupDataTable" msprop:Generator_TableVarName="tabletbl_UserGroup" msprop:Generator_RowDeletingName="tbl_UserGroupRowDeleting" msprop:Generator_TablePropName="tbl_UserGroup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserGroupID" msprop:Generator_UserColumnName="UserGroupID" msprop:Generator_ColumnPropNameInRow="UserGroupID" msprop:Generator_ColumnVarNameInTable="columnUserGroupID" msprop:Generator_ColumnPropNameInTable="UserGroupIDColumn" type="xs:string" />
+              <xs:element name="UserGroupName" msprop:Generator_UserColumnName="UserGroupName" msprop:Generator_ColumnPropNameInRow="UserGroupName" msprop:Generator_ColumnVarNameInTable="columnUserGroupName" msprop:Generator_ColumnPropNameInTable="UserGroupNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_MainUsers" />
+      <xs:field xpath="mstns:UserID" />
+    </xs:unique>
+    <xs:unique name="tbl_UserGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_UserGroup" />
+      <xs:field xpath="mstns:UserGroupID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tbl_UserGroup_tbl_MainUsers" msdata:parent="tbl_UserGroup" msdata:child="tbl_MainUsers" msdata:parentkey="UserGroupID" msdata:childkey="UserGroupID" msprop:Generator_UserRelationName="tbl_UserGroup_tbl_MainUsers" msprop:Generator_RelationVarName="relationtbl_UserGroup_tbl_MainUsers" msprop:Generator_UserChildTable="tbl_MainUsers" msprop:Generator_UserParentTable="tbl_UserGroup" msprop:Generator_ParentPropName="tbl_UserGroupRow" msprop:Generator_ChildPropName="Gettbl_MainUsersRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
