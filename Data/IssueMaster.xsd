@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IssueMaster" targetNamespace="http://tempuri.org/IssueMaster.xsd" xmlns:mstns="http://tempuri.org/IssueMaster.xsd" xmlns="http://tempuri.org/IssueMaster.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IssueMaster" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IssueMaster" msprop:Generator_UserDSName="IssueMaster">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_IssueMaster" msprop:Generator_TableClassName="tbl_IssueMasterDataTable" msprop:Generator_TableVarName="tabletbl_IssueMaster" msprop:Generator_TablePropName="tbl_IssueMaster" msprop:Generator_RowDeletingName="tbl_IssueMasterRowDeleting" msprop:Generator_RowChangingName="tbl_IssueMasterRowChanging" msprop:Generator_RowEvHandlerName="tbl_IssueMasterRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_IssueMasterRowDeleted" msprop:Generator_UserTableName="tbl_IssueMaster" msprop:Generator_RowChangedName="tbl_IssueMasterRowChanged" msprop:Generator_RowEvArgName="tbl_IssueMasterRowChangeEvent" msprop:Generator_RowClassName="tbl_IssueMasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IssueID" msprop:Generator_ColumnVarNameInTable="columnIssueID" msprop:Generator_ColumnPropNameInRow="IssueID" msprop:Generator_ColumnPropNameInTable="IssueIDColumn" msprop:Generator_UserColumnName="IssueID" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNo" msprop:Generator_ColumnVarNameInTable="columnInvoiceNo" msprop:Generator_ColumnPropNameInRow="InvoiceNo" msprop:Generator_ColumnPropNameInTable="InvoiceNoColumn" msprop:Generator_UserColumnName="InvoiceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceDate" msprop:Generator_ColumnVarNameInTable="columnInvoiceDate" msprop:Generator_ColumnPropNameInRow="InvoiceDate" msprop:Generator_ColumnPropNameInTable="InvoiceDateColumn" msprop:Generator_UserColumnName="InvoiceDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

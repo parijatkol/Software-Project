@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBrandMaster" targetNamespace="http://tempuri.org/dsBrandMaster.xsd" xmlns:mstns="http://tempuri.org/dsBrandMaster.xsd" xmlns="http://tempuri.org/dsBrandMaster.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBrandMaster" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBrandMaster" msprop:Generator_DataSetName="dsBrandMaster" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_BrandMaster" msprop:Generator_UserTableName="tbl_BrandMaster" msprop:Generator_RowDeletedName="tbl_BrandMasterRowDeleted" msprop:Generator_RowChangedName="tbl_BrandMasterRowChanged" msprop:Generator_RowClassName="tbl_BrandMasterRow" msprop:Generator_RowChangingName="tbl_BrandMasterRowChanging" msprop:Generator_RowEvArgName="tbl_BrandMasterRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_BrandMasterRowChangeEventHandler" msprop:Generator_TableClassName="tbl_BrandMasterDataTable" msprop:Generator_TableVarName="tabletbl_BrandMaster" msprop:Generator_RowDeletingName="tbl_BrandMasterRowDeleting" msprop:Generator_TablePropName="tbl_BrandMaster">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BrandID" msprop:Generator_UserColumnName="BrandID" msprop:Generator_ColumnVarNameInTable="columnBrandID" msprop:Generator_ColumnPropNameInRow="BrandID" msprop:Generator_ColumnPropNameInTable="BrandIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BrandName" msprop:Generator_UserColumnName="BrandName" msprop:Generator_ColumnVarNameInTable="columnBrandName" msprop:Generator_ColumnPropNameInRow="BrandName" msprop:Generator_ColumnPropNameInTable="BrandNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BrandCode" msprop:Generator_UserColumnName="BrandCode" msprop:Generator_ColumnPropNameInRow="BrandCode" msprop:Generator_ColumnVarNameInTable="columnBrandCode" msprop:Generator_ColumnPropNameInTable="BrandCodeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

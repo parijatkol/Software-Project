@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsUnitMaster" targetNamespace="http://tempuri.org/dsUnitMaster.xsd" xmlns:mstns="http://tempuri.org/dsUnitMaster.xsd" xmlns="http://tempuri.org/dsUnitMaster.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsUnitMaster" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsUnitMaster" msprop:Generator_UserDSName="dsUnitMaster" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_UnitMaster" msprop:Generator_UserTableName="tbl_UnitMaster" msprop:Generator_RowDeletedName="tbl_UnitMasterRowDeleted" msprop:Generator_TableClassName="tbl_UnitMasterDataTable" msprop:Generator_RowChangedName="tbl_UnitMasterRowChanged" msprop:Generator_RowClassName="tbl_UnitMasterRow" msprop:Generator_RowChangingName="tbl_UnitMasterRowChanging" msprop:Generator_RowEvArgName="tbl_UnitMasterRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_UnitMasterRowChangeEventHandler" msprop:Generator_TablePropName="tbl_UnitMaster" msprop:Generator_TableVarName="tabletbl_UnitMaster" msprop:Generator_RowDeletingName="tbl_UnitMasterRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UnitID" msprop:Generator_UserColumnName="UnitID" msprop:Generator_ColumnPropNameInRow="UnitID" msprop:Generator_ColumnVarNameInTable="columnUnitID" msprop:Generator_ColumnPropNameInTable="UnitIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UnitName" msprop:Generator_UserColumnName="UnitName" msprop:Generator_ColumnPropNameInRow="UnitName" msprop:Generator_ColumnVarNameInTable="columnUnitName" msprop:Generator_ColumnPropNameInTable="UnitNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

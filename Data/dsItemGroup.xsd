@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsItemGroup" targetNamespace="http://tempuri.org/dsItemGroup.xsd" xmlns:mstns="http://tempuri.org/dsItemGroup.xsd" xmlns="http://tempuri.org/dsItemGroup.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsItemGroup" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsItemGroup" msprop:Generator_UserDSName="dsItemGroup" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_ItemGroupMaster" msprop:Generator_UserTableName="tbl_ItemGroupMaster" msprop:Generator_RowDeletedName="tbl_ItemGroupMasterRowDeleted" msprop:Generator_TableClassName="tbl_ItemGroupMasterDataTable" msprop:Generator_RowChangedName="tbl_ItemGroupMasterRowChanged" msprop:Generator_RowClassName="tbl_ItemGroupMasterRow" msprop:Generator_RowChangingName="tbl_ItemGroupMasterRowChanging" msprop:Generator_RowEvArgName="tbl_ItemGroupMasterRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_ItemGroupMasterRowChangeEventHandler" msprop:Generator_TablePropName="tbl_ItemGroupMaster" msprop:Generator_TableVarName="tabletbl_ItemGroupMaster" msprop:Generator_RowDeletingName="tbl_ItemGroupMasterRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemGroupCode" msprop:Generator_UserColumnName="ItemGroupCode" msprop:Generator_ColumnPropNameInRow="ItemGroupCode" msprop:Generator_ColumnVarNameInTable="columnItemGroupCode" msprop:Generator_ColumnPropNameInTable="ItemGroupCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemGroupName" msprop:Generator_UserColumnName="ItemGroupName" msprop:Generator_ColumnPropNameInRow="ItemGroupName" msprop:Generator_ColumnVarNameInTable="columnItemGroupName" msprop:Generator_ColumnPropNameInTable="ItemGroupNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
