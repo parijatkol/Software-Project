@@ -1,0 +1,76 @@
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\bin\Debug\inventory_control.exe.config
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\bin\Debug\inventory_control.exe
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\bin\Debug\inventory_control.pdb
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\ResolveAssemblyReference.cache
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.AcctPeriodForm.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.BrandMaster.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.CreateSupplierForm.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.CurrentAcctPeriod.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.CustomerMaster.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.FormModules.FastItemCreate.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.ItemGroupMaster.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.ItemMaster.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.ItemPurchase.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.LoginForm.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.SelectFinYear.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.UnitMaster.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.UserCreationForm.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.MDIParent1.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.UserListForm.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.ViewStock.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.Properties.Resources.resources
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.csproj.GenerateResource.Cache
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.exe.licenses
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.exe
+D:\Software Project\Sun_Power\Inventory Control\inventory_control\inventory_control\obj\Debug\inventory_control.pdb
+D:\Software Project\Angshuda\bin\Debug\inventory_control.exe.config
+D:\Software Project\Angshuda\bin\Debug\inventory_control.exe
+D:\Software Project\Angshuda\bin\Debug\inventory_control.pdb
+D:\Software Project\Angshuda\obj\Debug\inventory_control.AcctPeriodForm.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.BrandMaster.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.CreateSupplierForm.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.CurrentAcctPeriod.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.CustomerMaster.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.FormModules.FastItemCreate.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.ItemGroupMaster.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.ItemMaster.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.ItemIssue.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.ItemPurchase.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.LoginForm.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.SelectFinYear.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.UnitMaster.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.UserCreationForm.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.MDIParent1.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.UserListForm.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.ViewStock.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.Properties.Resources.resources
+D:\Software Project\Angshuda\obj\Debug\inventory_control.csproj.GenerateResource.Cache
+D:\Software Project\Angshuda\obj\Debug\inventory_control.exe.licenses
+D:\Software Project\Angshuda\obj\Debug\inventory_control.exe
+D:\Software Project\Angshuda\obj\Debug\inventory_control.pdb
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.csprojResolveAssemblyReference.cache
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.AcctPeriodForm.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.BrandMaster.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.CreateSupplierForm.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.CurrentAcctPeriod.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.CustomerMaster.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.FormModules.FastItemCreate.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.ItemGroupMaster.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.ItemMaster.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.ItemIssue.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.ItemPurchase.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.LoginForm.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.SelectFinYear.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.UnitMaster.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.UserCreationForm.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.MDIParent1.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.UserListForm.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.ViewStock.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.Properties.Resources.resources
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.csproj.GenerateResource.Cache
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.exe.licenses
+D:\Google Drive\Software Projects\Angshuda\bin\Debug\inventory_control.exe.config
+D:\Google Drive\Software Projects\Angshuda\bin\Debug\inventory_control.exe
+D:\Google Drive\Software Projects\Angshuda\bin\Debug\inventory_control.pdb
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.exe
+D:\Google Drive\Software Projects\Angshuda\obj\Debug\inventory_control.pdb
